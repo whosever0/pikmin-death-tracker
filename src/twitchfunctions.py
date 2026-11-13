@@ -26,6 +26,10 @@ twitch = None
 user_id = None
 token = None
 refresh_token = None
+# Change this value for how long you want the user to be timed out in seconds
+# NEVER SET IT TO 0, THIS WILL BAN THE USER INSTEAD.
+# Default is 60 seconds, 32400 is 9 hours
+timeout_time = 60
 
 #NOTE - this list is to exclude chatters you do not want timed out
 blacklist = ["whosever0", "StreamElements"]
@@ -64,13 +68,14 @@ async def get_chatters():
     return result
 
 async def timeout_chatter(name):
+    global timeout_time
     result = await twitch.ban_user(
         broadcaster_id=user_id,
         moderator_id=user_id,
         user_id=name,
         reason="Died in pikmin",
         #THIS SHOULD NEVER BE 0, 0 IS AN ACTUAL BAN
-        duration=60, #seconds. 32400 is 9 hours
+        duration=timeout_time, # timeout in seconds, default is 60, 32400 is 9 hours
     )   
 
 async def kill_chatters(total):
