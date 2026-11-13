@@ -2,7 +2,7 @@
 
 For timing out your chat when you're bad at pikmin.
 
-Currently only tested with the Dolphin Emulator and the Pikmin USA version.
+Currently only tested with the Dolphin Emulator version 2609 and the Pikmin USA version.
 
 There is a WIP version that uses easyocr + OBS virtual camera to detect the text on the screen. Would not recomend unless you are trying to play on real HW.
 
