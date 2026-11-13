@@ -70,7 +70,11 @@ USERNAME='YOUR_USERNAME_HERE'
 
 ### **How to Run**
 
-Just do:
+TODO: Not sure what this will do when on the main menu or no save data exists. 
+      You might want to run this after you started a save and are in the first area.
+      Need to check.
+
+Start Dolphin and then just do:
 
 `python dolphintracking.py`
 
