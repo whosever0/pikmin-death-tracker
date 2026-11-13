@@ -4,6 +4,7 @@ Python script to connect Twitch API to timeout a user on pikmin death.
 **Setup:**
 
 **Python Setup:**
+
 This written for Python 3.13.15, found here: https://www.python.org/downloads/release/python-3130/
 
 After cloning the repo, setup the venv by doing the following in the repo in vscode terminal, command line(cmd), or powershell(ps) if you are evil:
@@ -19,6 +20,7 @@ run this command to install all the packages
 
 
 **Twitch Setup:**
+
 Go to https://dev.twitch.tv/console
 
 Make an application by doing "Register Your Application"
